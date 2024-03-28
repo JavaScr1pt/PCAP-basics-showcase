@@ -1,0 +1,58 @@
+# Importing a module
+import math
+
+# Defining a function
+def calculate_circle_area(radius):
+    return math.pi * radius ** 2
+
+# Getting user input
+radius = float(input("Enter the radius of the circle: "))
+
+# Calling a function
+area = calculate_circle_area(radius)
+
+# Printing output
+print("The area of the circle is:", area)
+
+# Using a conditional statement
+if area > 50:
+    print("The area is larger than 50.")
+else:
+    print("The area is not larger than 50.")
+
+# Using a loop
+print("Printing squares of numbers from 1 to 5:")
+for i in range(1, 6):
+    print(i, "squared is", i ** 2)
+
+# Using a list
+colors = ['red', 'green', 'blue']
+
+# Iterating over a list
+print("List of colors:")
+for color in colors:
+    print(color)
+
+# Using a dictionary
+student = {'name': 'John', 'age': 20, 'grade': 'A'}
+
+# Accessing dictionary values
+print("Student's name:", student['name'])
+print("Student's age:", student['age'])
+print("Student's grade:", student['grade'])
+
+# Using exception handling
+try:
+    x = 1 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+
+# Working with strings
+text = "Python Programming"
+print("Length of the text:", len(text))
+print("Uppercase text:", text.upper())
+print("Lowercase text:", text.lower())
+
+# Using list comprehension
+squares = [i ** 2 for i in range(1, 6)]
+print("Squares using list comprehension:", squares)
